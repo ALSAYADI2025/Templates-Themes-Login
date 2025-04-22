@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="theme-default">
+
+
+
+<div class="newDiv newDiv-card">
+      <div class="">
+            <label for="themeSelect">Choose Theme:</label>
+            <select id="themeSelect">
+            <option value="default">Default</option>
+            <option value="dark">Dark</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="teal">Teal</option>
+            <option value="indigo">Indigo</option>
+            <option value="rose">Rose</option>
+            <option value="sky">Sky</option>
+            <option value="lime">Lime</option>
+            <option value="amber">Amber</option>
+            <option value="cyan">Cyan</option>
+            <option value="violet">Violet</option>
+          </select>
+          </div>
+
+  <h1>Login</h1>
+  <input type="text" class="newDiv newDiv-input" placeholder="Username" id="username">
+  <input type="password" class="newDiv newDiv-input" placeholder="Password" id="password">
+  <button type="submit" class="newDiv newDiv-button">Submit</button>
+</div>
+
+<script>
+  const themeSelect = document.getElementById('themeSelect');
+  const body = document.body;
+
+  themeSelect.addEventListener('change', () => {
+    body.className = 'theme-' + themeSelect.value;
+  });
+</script>
+
+</body>
+</html>

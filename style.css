@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.newDiv {
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.newDiv-input {
+  padding: 12px;
+  width: 80%;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f0f0;
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+.newDiv-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.theme-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+:root {
+  --card-bg: #e0e5ec;
+  --text-color: #333;
+  --button-bg: #d1d5db;
+  --button-text: #000;
+}
+
+/* Theme List */
+body.theme-default { background-color: #e0e5ec; --card-bg: #e0e5ec; --text-color: #333; --button-bg: #d1d5db; --button-text: #000; }
+body.theme-dark { background-color: #1e1e1e; --card-bg: #2c2c2c; --text-color: #fff; --button-bg: #444; --button-text: #fff; }
+body.theme-blue { background-color: #3B82F6; --card-bg: #60a5fa; --text-color: #fff; --button-bg: #2563eb; --button-text: #fff; }
+body.theme-green { background-color: #10B981; --card-bg: #34d399; --text-color: #fff; --button-bg: #059669; --button-text: #fff; }
+body.theme-red { background-color: #EF4444; --card-bg: #f87171; --text-color: #fff; --button-bg: #dc2626; --button-text: #fff; }
+body.theme-yellow { background-color: #FACC15; --card-bg: #fde047; --text-color: #000; --button-bg: #eab308; --button-text: #000; }
+body.theme-orange { background-color: #FB923C; --card-bg: #fdba74; --text-color: #000; --button-bg: #f97316; --button-text: #000; }
+body.theme-purple { background-color: #8B5CF6; --card-bg: #a78bfa; --text-color: #fff; --button-bg: #7c3aed; --button-text: #fff; }
+body.theme-pink { background-color: #EC4899; --card-bg: #f472b6; --text-color: #fff; --button-bg: #db2777; --button-text: #fff; }
+body.theme-teal { background-color: #14B8A6; --card-bg: #2dd4bf; --text-color: #fff; --button-bg: #0d9488; --button-text: #fff; }
+body.theme-indigo { background-color: #6366F1; --card-bg: #818cf8; --text-color: #fff; --button-bg: #4f46e5; --button-text: #fff; }
+body.theme-rose { background-color: #F43F5E; --card-bg: #fb7185; --text-color: #fff; --button-bg: #e11d48; --button-text: #fff; }
+body.theme-sky { background-color: #0ea5e9; --card-bg: #38bdf8; --text-color: #fff; --button-bg: #0284c7; --button-text: #fff; }
+body.theme-lime { background-color: #84cc16; --card-bg: #a3e635; --text-color: #000; --button-bg: #65a30d; --button-text: #fff; }
+body.theme-amber { background-color: #f59e0b; --card-bg: #fbbf24; --text-color: #000; --button-bg: #d97706; --button-text: #fff; }
+body.theme-cyan { background-color: #06b6d4; --card-bg: #22d3ee; --text-color: #000; --button-bg: #0891b2; --button-text: #fff; }
+body.theme-violet { background-color: #7c3aed; --card-bg: #a78bfa; --text-color: #fff; --button-bg: #6d28d9; --button-text: #fff; }
